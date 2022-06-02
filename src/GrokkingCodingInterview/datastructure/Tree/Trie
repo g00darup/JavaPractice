@@ -1,0 +1,46 @@
+What is a Trie?
+This lesson gives a brief introduction to Trie, its properties, and common applications.
+
+We'll cover the following
+
+Introduction
+💡 Did you know?
+Common Applications of Tries
+1. Auto-Complete Words
+2. Spell-Checking
+3. Searching for a Contact in Phone
+Properties of Trie
+Introduction #
+Till now, we only studied some of the commonly used Trees like Red-Black, 2-3 Trees, etc. In this chapter, we are going to look at a tree-like data structure which proves to be really efficient while solving programming problems related to Strings. This data structure is called Trie and is also known as “Prefix Trees”; we will find out why it’s named that later.
+
+💡 Did you know? #
+Trie basically comes from the word “retrieval”, as the main purpose of using this structure is that it provides fast retrieval. Tries are mostly used for searching words in the dictionary, providing auto-suggestions in search engines, and for IP routing.
+
+svg viewer
+An example of a Trie.
+Common Applications of Tries #
+Tries are basically used where fast retrieval is required. Let’s have a look at some real-life examples to understand how Tries are being used:
+
+1. Auto-Complete Words #
+Today, the autocomplete feature is supported by almost all of the major applications. This feature can be very efficiently implemented with the help of Tries, as they reduce the overall cost of performance.
+
+2. Spell-Checking #
+Tries come in handy when you need to perform spell-check on a word entered by the user, to check if that word already exists in the dictionary or if the user needs to be corrected. This feature is really helpful when the user does not know the exact spelling of a keyword he’s searching for.
+
+3. Searching for a Contact in Phone #
+Another real-life use of Tries is the searching we do while looking for a person in the contact list. It provides auto-suggestions based on the combination of letters that we enter. This could also be performed with Hash Tables but it won’t be as efficient as Tries; we will discuss this in detail later.
+
+Properties of Trie #
+To maintain its overall efficiency, Tries have to follow the rules given below:
+
+Tries are similar to Graphs, as they are a combination of nodes where each node represents a unique alphabet.
+
+Tries are more like ordered trees where each of the children can either be Null or points to a node.
+
+The size of the Trie depends upon the number of letters. For example, in English there are 26 letters, so the size of a Trie node cannot exceed 26.
+
+The depth of a Trie depends on the longest word that it stores.
+
+Another important property of Tries is that they provide the same path for words that share a common prefix. For example, “there” and “their” have a common prefix “the”, so they will share the same path till “e”. After that, they will be divided into two branches. The whole working of Trie depends on this property, so we will discuss this later in detail.
+
+These are some of the basic properties that every Trie must hold. In the next lesson, we will discuss the structure of Trie in detail.

@@ -1,0 +1,38 @@
+Introduction #
+2-3-4 is a search tree which is an advanced version of 2-3 Trees. This tree can accommodate more keys and hence more child nodes as compared to 2-3 Trees. Likewise, a 2-3-4 Tree satisfies all the properties covered in 2-3 Trees as well as some additional key features:
+
+Each internal node can contain a max. of three keys
+
+Each internal node can have a max. of four child nodes
+
+In the case of three keys (left, mid, and right) at an internal node, all the keys present at the LeftChild node are smaller than the left key. This can be mathematically expressed as,
+
+LeftChild.keys < LeftKeyLeftChild.keys<LeftKey
+
+All the keys present at the LeftMidChild node are smaller than the mid key, which can be mathematically expressed as,
+LeftMidChild.keys < MidKeyLeftMidChild.keys<MidKey
+
+All the keys present at the RightMidChild node are smaller than the right key, which can be mathematically expressed as,
+RightMidChild.keys < RightKeyRightMidChild.keys<RightKey
+
+Finally, all the keys present at the RightChild node are greater than the right key, which can be mathematically expressed as,
+RightChild.keys > RightKeyRightChild.keys>RightKey
+
+Example #
+Given below is an example of 2-3-4 Trees. The insertion/deletion is performed in the same way as we did in 2-3 Trees, keeping in mind the fact that nodes in 2-3-4 Trees are allowed to have three keys at a time instead of two.
+
+29
+55
+75
+14
+26
+30
+35
+40
+58
+60
+70
+80
+89
+We have covered all basic types of trees, now let’s go through an overview of all that information once again!
+
