@@ -13,7 +13,7 @@ public class MinDiffINBST {
 
         for(int i=0;i<list.size();i++){
             if(i!=(list.size()-1)){
-                res.add(Math.abs(list.get(i)-list.get(i+1)));
+                res.add((list.get(i)-list.get(i+1)));
             }
         }
 

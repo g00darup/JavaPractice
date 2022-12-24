@@ -49,7 +49,7 @@ The solution is simple; its time complexity is O(n)O(n).
         int trackThieves = 0, trackPolice = 0;
         while (trackThieves < thieves.size() && trackPolice < police.size()) {
             //thieves can be caught
-            if (Math.abs(thieves.get(trackThieves) - police.get(trackPolice)) <= k) {
+            if ((thieves.get(trackThieves) - police.get(trackPolice)) <= k) {
                 result++;
                 trackThieves++;
                 trackPolice++;
