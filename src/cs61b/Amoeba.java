@@ -1,4 +1,4 @@
-package summer19cs61b;
+package cs61b;
 
 public class Amoeba {
 }

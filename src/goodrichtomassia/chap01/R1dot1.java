@@ -1,4 +1,4 @@
-package goodrichNTomassia.chap01;
+package goodrichtomassia.chap01;
 /*
 Suppose that we create an array A of GameEntry objects, which has an integer scores field,
 and we clone A and store the result in an array B. If we then immediately set A [4].score equal to 550,

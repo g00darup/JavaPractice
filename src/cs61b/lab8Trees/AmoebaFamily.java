@@ -1,4 +1,4 @@
-package summer19cs61b.lab8Trees;
+package cs61b.lab8Trees;
 
 import java.util.ArrayList;
 import java.util.Iterator;
