@@ -24,8 +24,8 @@ public class CommandExecutor {
     public static void main(String args[]) throws IOException {
 //        CommandExecutor commandExecutor=new CommandExecutor();
 //        //commandExecutor.exceuteCommand();
-//        commandExecutor.exceuteCommand("node", "/home/kaliadmin/Downloads/server.js");
-        ProcessBuilder process = new ProcessBuilder("node", "/home/kaliadmin/Downloads/server.js");
+//        commandExecutor.exceuteCommand("node", "server.js");
+        ProcessBuilder process = new ProcessBuilder("node", "server.js");
                 //.directory(navigatePath)
 
         process.redirectOutput(ProcessBuilder.Redirect.INHERIT);
