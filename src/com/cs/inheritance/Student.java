@@ -2,10 +2,25 @@ package com.cs.inheritance;
 
 import com.cs.inheritance.input.Person;
 
+import java.util.Objects;
+
 public class Student implements Person {
     public Student(Name fullName, String id) {
         this.fullName = fullName;
         this.id = id;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return Objects.equals(fullName, student.fullName) && id.equals(student.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(fullName, id);
     }
 
     @Override

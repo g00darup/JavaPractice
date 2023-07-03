@@ -1,9 +1,8 @@
-package CarranoDS.QUeues;
+package CarranoDS.Queues;
 
 import goodrichtomassia.trees.LinkedQueue;
 
 import java.util.Queue;
-import java.util.stream.Stream;
 
 public class WaitLine {
     private Queue<Integer> line;
