@@ -28,7 +28,7 @@ public class numWords{
             result++;
 
         for (int i = 0; i < 26; i++)
-            if (root.children[i] != null)
+            if (root != null)
                 result += totalWords(root.children[i]);
         return result;
     }

@@ -1,13 +1,14 @@
 package com.cs.inheritance;
 
-import com.cs.inheritance.input.Person;
 
 import java.util.Objects;
 
 public class Student implements Person {
-    public Student(Name fullName, String id) {
-        this.fullName = fullName;
-        this.id = id;
+    Name fullName;
+    String id;
+    public Student(Name name, String id) {
+        fullName = name;
+        id = id;
     }
 
     @Override
@@ -15,7 +16,7 @@ public class Student implements Person {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        return Objects.equals(fullName, student.fullName) && id.equals(student.id);
+        return  id.equals(student.id);
     }
 
     @Override
@@ -36,7 +37,7 @@ public class Student implements Person {
     }
 
     public void setFullName(Name fullName) {
-        this.fullName = fullName;
+        fullName = fullName;
     }
 
     public String getId() {
@@ -46,14 +47,7 @@ public class Student implements Person {
     public void setId(String id) {
         this.id = id;
     }
-
-    private Name fullName;
-    private String id;
-
-    public Student(){
-        fullName = new Name();
-    }
-
+    
 
     @Override
     public boolean equalTo(Person other) {

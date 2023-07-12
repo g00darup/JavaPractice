@@ -6,9 +6,6 @@ public class SchoolStudent extends Student{
         this.schoolName = schoolName;
     }
 
-    public SchoolStudent(String schoolName) {
-        this.schoolName = schoolName;
-    }
 
     String schoolName;
 }

@@ -18,7 +18,7 @@ public class Pair <K,V>{
 
     public static void main (String[] args){
         Pair<String, Integer> pair1 = new Pair<String,Integer>();
-        pair1.set(new String("height"), new Integer(36));
+        pair1.set(new String("height"), 36);
         System.out.println(pair1);
 
         Pair<Student, Double> stdPaoir = new Pair<>();

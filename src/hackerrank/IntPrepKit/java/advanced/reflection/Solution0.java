@@ -1,6 +1,6 @@
 package hackerrank.IntPrepKit.java.advanced.reflection;
-
-import hackerrank.IntPrepKit.java.advanced.Student;
+;
+import com.cs.inheritance.Student;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;

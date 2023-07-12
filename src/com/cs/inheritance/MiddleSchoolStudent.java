@@ -5,7 +5,4 @@ public class MiddleSchoolStudent extends SchoolStudent{
         super(fullName, id, schoolName);
     }
 
-    public MiddleSchoolStudent(String schoolName) {
-        super(schoolName);
-    }
 }
