@@ -18,7 +18,7 @@ and is only updated when an end of the word is observed during insertion.
 
 public class TrieNode {
 
-    TrieNode[] children;
+    public TrieNode[] children;
     boolean isEndWord; //will be true if the node represents the end of word
     static final int ALPHABET_SIZE = 26; //Total # of English Alphabets = 26
     TrieNode(){

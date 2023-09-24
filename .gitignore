@@ -1,6 +1,7 @@
 .classpath
 .project
 .settings/
+*.class
 
 
 .out/
@@ -11,4 +12,5 @@
 .DS_Store
 
 log/
-target/
+target
+out
