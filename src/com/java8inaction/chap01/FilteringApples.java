@@ -2,6 +2,7 @@ package com.java8inaction.chap01;
 
 import java.util.*;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class FilteringApples{
 
@@ -18,6 +19,14 @@ public class FilteringApples{
         // [Apple{color='green', weight=155}]
         List<Apple> heavyApples = filterApples(inventory, FilteringApples::isHeavyApple);
         System.out.println(heavyApples);
+
+
+        List<Apple> greenApples0 = filterApples2(inventory, FilteringApples::isGreenApple);
+        System.out.println(greenApples0);
+
+        // [Apple{color='green', weight=155}]
+        List<Apple> heavyApples0 = filterApples2(inventory, FilteringApples::isHeavyApple);
+        System.out.println(heavyApples0);
 
         // [Apple{color='green', weight=80}, Apple{color='green', weight=155}]
         List<Apple> greenApples2 = filterApples(inventory, (Apple a) -> "green".equals(a.getColor()));
@@ -69,6 +78,13 @@ public class FilteringApples{
             }
         }
         return result;
+    }
+
+    public static List<Apple> filterApples2(List<Apple> inventory, Predicate<Apple> p){
+        return  inventory.
+                stream().
+                filter(apple -> p.test(apple)).
+                collect(Collectors.toList());
     }
 
 }
