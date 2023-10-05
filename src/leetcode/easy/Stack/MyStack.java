@@ -1,9 +1,7 @@
-package leetcode.easy;
+package leetcode.easy.Stack;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.Queue;
-import java.util.Stack;
 
 class MyStack {
     Deque<Integer> inQ,outQ;

@@ -1,13 +1,11 @@
-package leetcode.easy;
-
-import GrokkingCodingInterview.datastructure.Stack.Stack;
+package leetcode.easy.Stack;
 
 public class QueueWithStack {
-        Stack<Integer> inStack,outStack;
+        java.util.Stack<Integer> inStack,outStack;
 
         public QueueWithStack() {
-            inStack = new Stack<>(1000);
-            outStack = new Stack<>(1000);
+            inStack = new java.util.Stack();
+            outStack = new java.util.Stack();
         }
 
         public void push(int x) {
@@ -39,7 +37,7 @@ public class QueueWithStack {
         public int peek() {
             int val = 0;
             if(!outStack.isEmpty()){
-                val = outStack.top();
+                val = outStack.peek();
             }
             return val;
         }
