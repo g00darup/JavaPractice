@@ -5,17 +5,25 @@ public class ProductExSelf {
         int len = nums.length;
         int prod[] = new int [len];
         int leftMul=1,rightMul=1;
-        int rightCount=0,leftCount=0;
-        for(int i=1;i<len;i++) {
-                prod[i] = leftMul;
-                prod[i] = prod[i]*nums[i];
-                rightCount++;
+        for(int i=0; i<len;i++) {
+                if(prod[i]!=0)
+                    prod[i] = prod[i]*leftMul;
+                else
+                    prod[i] = leftMul;
+                for(int right=i+1;right<len;right++){
+                prod[i] = prod[i]*nums[right];
+                }
         }
 
-        for(int j=len-1;j>1;j--){
-            prod[j] = prod[j]*rightMul;
-            prod[j] = prod[j]*nums[j];
-            leftCount++;
+        for(int j = len-1; j>0; j--){
+            if(prod[j]!=0)
+                prod[j] = prod[j]*rightMul;
+            else
+                prod[j] = rightMul;
+            for(int left=j-1;left>0;left--) {
+                prod[j] = prod[j] * nums[left];
+            }
+
         }
 
         return prod;
