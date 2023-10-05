@@ -11,8 +11,9 @@ public class PracticeProblems {
     public static void main(String[] args) {
         List lst = Arrays.asList(95,85,93,91,92,96,13,14,111,123,123,91);
         //System.out.println(evenList(lst));
-        Optional opt = findFirst(lst);
-        opt.ifPresent(System.out::println);
+        //Optional opt = findFirst(lst);
+        //opt.ifPresent(System.out::println);
+        System.out.println(findDups(lst));
     }
 
     /* Given a list of integers, find out all the even numbers that exist in the list using Stream functions?*/
