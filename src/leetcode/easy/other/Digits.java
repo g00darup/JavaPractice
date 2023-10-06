@@ -1,4 +1,4 @@
-package leetcode.easy;
+package leetcode.easy.other;
 /*
 Given a non-empty array of decimal digits representing a non-negative integer,
 increment one to the integer.
