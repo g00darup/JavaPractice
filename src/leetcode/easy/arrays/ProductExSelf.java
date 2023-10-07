@@ -1,5 +1,8 @@
 package leetcode.easy.arrays;
 
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
 public class ProductExSelf {
     public int[] productExceptSelf(int[] nums) {
         int len = nums.length;
@@ -29,9 +32,19 @@ public class ProductExSelf {
         return prod;
     }
 
+    private static int mulSubArr(int[] arr,int src,int dest){
+//        int prod = IntStream.range(src,dest).
+//                reduce(1,)
+        int prod = 1;
+        for(int i=src;i<dest;i++){
+            prod = prod * arr[i];
+        }
+        return prod;
+    }
+
     public static void main(String[] args) {
         ProductExSelf p = new ProductExSelf();
-        int nums[] = {1,2,3,4};
+        int nums[] = {-1,1,0,-3,3};
         int prod[] = p.productExceptSelf(nums);
 
         for(int i:prod){
