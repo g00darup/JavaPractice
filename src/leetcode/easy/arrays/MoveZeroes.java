@@ -3,7 +3,8 @@ package leetcode.easy.arrays;
 import java.util.Arrays;
 
 public class MoveZeroes {
-
+//adding to override commit conflict
+//for future reference, need to optimize the loops
     int[] moveZeroes(int[] a){
             int len = a.length;
             int zeroPtr=-1;
