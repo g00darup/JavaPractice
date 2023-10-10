@@ -7,6 +7,13 @@ import java.util.Queue;
 
 class BinaryTree
 {
+    @Override
+    public String toString() {
+        return "BinaryTree{" +
+                "root=" + root +
+                '}';
+    }
+
     Node root;
 
     // Iterative method to find height of Binary Tree
