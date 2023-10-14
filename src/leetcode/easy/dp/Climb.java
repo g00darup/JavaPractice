@@ -1,3 +1,5 @@
+package leetcode.easy.dp;
+
 public class Climb {
     public int climbStairs(int n) {
         int [] ways = new int[n+1];
