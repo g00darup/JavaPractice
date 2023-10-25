@@ -11,18 +11,15 @@ class ListNode {
 
 public class ReverseLL {
     public ListNode reverseList(ListNode head) {
-        ListNode newHead = new ListNode();
-        ListNode newNode = null;
-        ListNode rest=null;
-        if(head!=null && head.next!=null) {
-            newNode = new ListNode(head.next.val);
+        ListNode rest = null;
+        if(head!=null && head.next!=null){
             rest = head.next;
         }
 
+        rest = reverseList(rest);
+        rest.next = new ListNode(head.val);
 
-        newHead.next = reverseList(rest);
-        newHead.next = newNode;
-        return newHead;
+        return rest;
 
 
     }

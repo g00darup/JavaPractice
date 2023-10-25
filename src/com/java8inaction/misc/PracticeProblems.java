@@ -38,10 +38,19 @@ public class PracticeProblems {
         List<Integer> distinct = (List<Integer>) s.distinct().collect(Collectors.toList());
 //        Consumer con =
 //        List<Integer> dups = s.forEach(con);
-        Map<Integer,Long> intMap = input.stream().
+        int [] nums = {2,7,11,15};
+        List<Integer> list = Arrays.stream(nums)
+                .mapToObj(Integer::valueOf)
+                .collect(Collectors.toList());
+
+        Map<Integer,Long> intMap = list.stream().
                 collect(Collectors.
                 groupingBy(Function.identity(),
                 HashMap::new,Collectors.counting()));
+
+        for(Map.Entry mp: intMap.entrySet()){
+            System.out.println(mp.getKey()+"-"+mp.getValue());
+        }
 
         List<Integer> dups = intMap.
                 entrySet().
@@ -74,5 +83,7 @@ public class PracticeProblems {
     public static List<Integer> sorted(List<Integer> input){
         return input.stream().sorted(Comparator.naturalOrder()).toList();
     }
+
+
 
 }

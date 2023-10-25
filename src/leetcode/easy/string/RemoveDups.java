@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 public class RemoveDups {
         public int removeDuplicates(int[] nums) {
 
-            Set s = Arrays.asList(nums).stream().map()
+            Set s = Arrays.asList(nums).stream().collect(Collectors.toSet());
 
             return s.size();
         }
