@@ -1,9 +1,11 @@
-package crackingcodingint.Chap01;
+package leetcode.easy.string;
+
+import edu.princeton.cs.algs4.In;
 
 import java.util.HashMap;
 import java.util.Iterator;
 
-public class StringCompresspm {
+class Compress {
     public int compress(char[] chars) {
         HashMap<Character, Integer> cmap = new HashMap<>();
         for (char ch: chars){
@@ -22,5 +24,11 @@ public class StringCompresspm {
         chars = sb.toString().toCharArray();
 
         return chars.length;
+    }
+
+    public static void main(String[] args) {
+        char [] c= {};
+        Compress cm = new Compress();
+        System.out.println(cm.compress(c));
     }
 }

@@ -1,5 +1,6 @@
 package crackingcodingint.Chap01;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 
@@ -12,23 +13,23 @@ public class ArePermuteOfAnother {
 
     public void run() {
         boolean expected_1 = false;
-        boolean output_1 = findPermutations("goat","boat");
+        boolean output_1 = perms("goat","boat");
         check(expected_1, output_1);
 
         boolean expected_2 = true;
-        boolean output_2 = findPermutations("god","dog");
+        boolean output_2 = perms("god","dog");
         check(expected_2, output_2);
 
         boolean expected_3 = true;
-        boolean output_3 = findPermutations("a","a");
+        boolean output_3 = perms("a","a");
         check(expected_3, output_3);
 
         boolean expected_4 = true;
-        boolean output_4 = findPermutations("aaa","aaa");
+        boolean output_4 = perms("aaa","aaa");
         check(expected_4, output_4);
 
         boolean expected_5 = true;
-        boolean output_5 = findPermutations("","");
+        boolean output_5 = perms("","");
         check(expected_5, output_5);
     }
 
@@ -60,6 +61,17 @@ public class ArePermuteOfAnother {
                 allMatch(e->e.getValue().equals(m2.get(e.getKey())));
 
         }
+    String sort(String str){
+        char [] ch = str.toCharArray();
+        Arrays.sort(ch);
+        return new String(ch);
+    }
+
+    boolean perms (String s, String t){
+        if(s.length()!=t.length())
+            return false;
+        return sort(s).equals(sort(t));
+    }
 
     int test_case_number = 1;
 
