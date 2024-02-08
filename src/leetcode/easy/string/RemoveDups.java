@@ -7,6 +7,11 @@ import java.util.stream.Collectors;
 
 public class RemoveDups {
         public int removeDuplicates(int[] nums) {
+
+
+            Set s = Arrays.asList(nums).stream().collect(Collectors.toSet());
+
+            return s.size();
             int [] copyNums = new int[nums.length];
             int ops = 0;
             if(nums.length==1)
