@@ -11,11 +11,12 @@ public class RemoveDups {
 
             Set s = Arrays.asList(nums).stream().collect(Collectors.toSet());
 
-            return s.size();
+            //return s.size();
             int [] copyNums = new int[nums.length];
             int ops = 0;
             if(nums.length==1)
                 return 1;
+
             if(nums.length>1) {
                 copyNums[0] = nums[0];
                 for (int i = 1; i < nums.length; i++) {
