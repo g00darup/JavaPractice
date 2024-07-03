@@ -1,6 +1,6 @@
-package CarranoDS.Queues;
+package CarranoDS.QUeues;
 
-public class ArrayQueue<T> implements QueueInterface<T> {
+public class ArrayQueue<T> implements CarranoDS.QUeues.QueueInterface<T> {
     private T[] queue;
     private int frontIndex;
     private int backIndex;

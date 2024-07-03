@@ -1,4 +1,4 @@
-package CarranoDS.Queues;
+package CarranoDS.QUeues;
 
 public class StockLedger {
     private QueueInterface<StockPurchase> ledger;

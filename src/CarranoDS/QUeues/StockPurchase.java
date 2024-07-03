@@ -1,4 +1,4 @@
-package CarranoDS.Queues;
+package CarranoDS.QUeues;
 
 public class StockPurchase {
     double cost;
