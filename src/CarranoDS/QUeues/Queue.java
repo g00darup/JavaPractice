@@ -1,8 +1,8 @@
-package CarranoDS.Queues;
+package CarranoDS.QUeues;
 
 import CarranoDS.ADTList.Linked.Node;
 
-public class Queue<T> implements QueueInterface<T>{
+public class  Queue<T> implements CarranoDS.QUeues.QueueInterface<T> {
 
     private CarranoDS.ADTList.Linked.Node firstNode;
     private CarranoDS.ADTList.Linked.Node lastNode;

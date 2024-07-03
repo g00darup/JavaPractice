@@ -1,4 +1,4 @@
-package CarranoDS.Queues;
+package CarranoDS.QUeues;
 
 public interface QueueInterface<T> {
     public void enqueue(T newEntry);
